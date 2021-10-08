@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kpavan3009.github.io
+Token: 7e749cb386d0bec4a5da9dbbbbe76835c43610a169b5a89345a85e5f0b90c325
