@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pavan Sesha Sai — Software Engineer</title>
-  <meta name="description" content="Software Engineer · ML/AI · Full Stack · AWS Certified."/>
+  <title>Pavan Sesha Sai -- Software Engineer</title>
+  <meta name="description" content="Software Engineer building production-grade AI/ML systems and backend platforms across real-time inference, data pipelines, and distributed infrastructure."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
-/* ───────────────────────────── RESET & TOKENS ───────────────────────────── */
+/* RESET & TOKENS */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   --bg:#07070e;--bg2:#0c0c18;--bg3:#11111f;
@@ -23,16 +23,16 @@ body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overf
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:linear-gradient(var(--p1),var(--p2));border-radius:2px}
 
-/* ───────────────────────────── CURSOR ───────────────────────────────────── */
+/* CURSOR */
 #cur{width:10px;height:10px;background:var(--p1);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .15s,height .15s,background .15s}
 #cur-r{width:34px;height:34px;border:1.5px solid rgba(102,126,234,.45);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}
 body:has(a:hover) #cur,body:has(button:hover) #cur{width:18px;height:18px;background:var(--accent)}
 body:has(a:hover) #cur-r,body:has(button:hover) #cur-r{width:50px;height:50px;border-color:var(--accent)}
 
-/* ───────────────────────────── PARTICLES ────────────────────────────────── */
+/* PARTICLES */
 #cvs{position:fixed;inset:0;z-index:0;pointer-events:none}
 
-/* ───────────────────────────── NAV ──────────────────────────────────────── */
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 64px;background:rgba(7,7,14,.7);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:padding .3s}
 nav.sc{padding:13px 64px}
 .nav-logo{font-family:'Fira Code',monospace;font-size:1rem;font-weight:600;background:linear-gradient(135deg,var(--p1),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -44,7 +44,7 @@ nav.sc{padding:13px 64px}
 .nav-cta{background:linear-gradient(135deg,var(--p1),var(--p2)) !important;color:#fff !important;padding:8px 22px;border-radius:50px;font-weight:700 !important}
 .nav-cta::after{display:none !important}
 
-/* ───────────────────────────── HERO ─────────────────────────────────────── */
+/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding:120px 64px 80px;max-width:100%;position:relative;z-index:1}
 .hero-inner{max-width:1200px;margin:0 auto;width:100%}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,.07);border:1px solid rgba(0,212,255,.2);color:var(--accent);padding:6px 18px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:30px}
@@ -55,7 +55,7 @@ nav.sc{padding:13px 64px}
 .hero-tw{font-family:'Fira Code',monospace;font-size:clamp(.95rem,2.2vw,1.35rem);color:var(--p1);margin-bottom:28px;height:1.8rem;display:flex;align-items:center;gap:3px}
 .blink{animation:blink .8s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-.hero-bio{font-size:1.05rem;color:var(--muted);line-height:1.8;max-width:600px;margin-bottom:40px}
+.hero-bio{font-size:1.05rem;color:var(--muted);line-height:1.8;max-width:640px;margin-bottom:40px}
 .hero-bio strong{color:var(--text)}
 
 /* contact strip */
@@ -69,29 +69,27 @@ nav.sc{padding:13px 64px}
 .btn-p:hover{transform:translateY(-3px);box-shadow:0 8px 36px rgba(102,126,234,.5)}
 .btn-g{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--border);color:var(--text);padding:14px 32px;border-radius:50px;font-weight:600;font-size:.92rem;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
 .btn-g:hover{border-color:var(--p1);background:rgba(102,126,234,.08);transform:translateY(-3px)}
-.btn-resume{background:linear-gradient(135deg,var(--green),#00b362);color:#000 !important;font-weight:700}
-.btn-resume:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,255,136,.35)}
 
 .hero-stats{display:flex;gap:48px;flex-wrap:wrap}
 .stat-num{font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,var(--p1),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
 .stat-label{font-size:.72rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
 
-/* ───────────────────────────── SECTIONS ─────────────────────────────────── */
+/* SECTIONS */
 section{padding:120px 64px;max-width:1200px;margin:0 auto;position:relative;z-index:1}
 .s-label{font-family:'Fira Code',monospace;font-size:.75rem;color:var(--p1);font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
 .s-title{font-size:clamp(1.9rem,4vw,3rem);font-weight:800;letter-spacing:-.025em;margin-bottom:52px;line-height:1.1}
 .s-title span{background:linear-gradient(135deg,var(--p1),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 
-/* ───────────────────────────── ABOUT ────────────────────────────────────── */
+/* ABOUT */
 #about .ag{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
 .at p{color:var(--muted);line-height:1.9;margin-bottom:18px;font-size:.97rem}
 .at p strong{color:var(--text)}
 .acode{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:28px 28px 28px 28px;font-family:'Fira Code',monospace;font-size:.8rem;line-height:2;overflow-x:auto;position:relative}
-.acode::before{content:'● ● ●';position:absolute;top:14px;left:20px;color:var(--muted);font-size:.6rem;letter-spacing:4px}
+.acode::before{content:'# # #';position:absolute;top:14px;left:20px;color:var(--muted);font-size:.6rem;letter-spacing:4px}
 .ac{margin-top:22px}
 .ck{color:#c792ea}.cs{color:#c3e88d}.cv{color:var(--accent)}.cb{color:var(--p1)}.cm{color:var(--muted)}.cn{color:#f78c6c}
 
-/* ───────────────────────────── SKILLS ───────────────────────────────────── */
+/* SKILLS */
 #skills{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 100%)}
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
 .sc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;transition:border-color .3s,transform .3s,box-shadow .3s}
@@ -101,7 +99,7 @@ section{padding:120px 64px;max-width:1200px;margin:0 auto;position:relative;z-in
 .tags{display:flex;flex-wrap:wrap;gap:7px}
 .tag{background:rgba(102,126,234,.09);border:1px solid rgba(102,126,234,.2);color:var(--p1);padding:3px 11px;border-radius:50px;font-size:.72rem;font-weight:500;font-family:'Fira Code',monospace}
 
-/* ───────────────────────────── PROJECTS ─────────────────────────────────── */
+/* PROJECTS */
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px}
 .pc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px;transition:border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden;display:flex;flex-direction:column}
 .pc::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(102,126,234,.06),transparent);opacity:0;transition:opacity .3s}
@@ -119,7 +117,7 @@ section{padding:120px 64px;max-width:1200px;margin:0 auto;position:relative;z-in
 .techs{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
 .tp{background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--muted);padding:3px 10px;border-radius:50px;font-size:.7rem;font-family:'Fira Code',monospace}
 
-/* ───────────────────────────── EXPERIENCE ───────────────────────────────── */
+/* EXPERIENCE */
 #experience{background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 100%)}
 .timeline{position:relative;padding-left:40px}
 .timeline::before{content:'';position:absolute;left:12px;top:8px;bottom:8px;width:1px;background:linear-gradient(to bottom,var(--p1),transparent)}
@@ -131,18 +129,18 @@ section{padding:120px 64px;max-width:1200px;margin:0 auto;position:relative;z-in
 .tdate{color:var(--muted);font-size:.78rem;font-family:'Fira Code',monospace}
 .ti ul{list-style:none}
 .ti li{color:#b0b0cc;font-size:.88rem;line-height:1.75;padding:3px 0;display:flex;gap:10px;align-items:flex-start}
-.ti li::before{content:'▸';color:var(--p1);flex-shrink:0;margin-top:2px}
+.ti li::before{content:'>';color:var(--p1);flex-shrink:0;margin-top:2px}
 .ti li strong{color:var(--text)}
 
-/* ───────────────────────────── CERTS ────────────────────────────────────── */
-.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+/* CERTS */
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .cert{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px;display:flex;align-items:center;gap:18px;transition:border-color .3s,transform .3s}
 .cert:hover{border-color:var(--p1);transform:translateY(-3px)}
 .cert-logo{font-size:2.2rem;flex-shrink:0}
 .cert-name{font-weight:700;font-size:.9rem;margin-bottom:4px}
 .cert-iss{color:var(--muted);font-size:.76rem}
 
-/* ───────────────────────────── CONTACT ──────────────────────────────────── */
+/* CONTACT */
 #contact{text-align:center}
 .contact-wrap{background:var(--bg3);border:1px solid var(--border);border-radius:24px;padding:72px 48px;max-width:780px;margin:0 auto;position:relative;overflow:hidden}
 .contact-wrap::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(102,126,234,.13),transparent 60%);pointer-events:none}
@@ -161,18 +159,17 @@ section{padding:120px 64px;max-width:1200px;margin:0 auto;position:relative;z-in
 .cl-li{background:#0077b5;color:#fff}
 .cl-gh{background:#24292e;color:#fff;border:1px solid #444}
 .cl-em{background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff}
-.cl-re{background:linear-gradient(135deg,var(--green),#00b362);color:#000}
 
-/* ───────────────────────────── FOOTER ───────────────────────────────────── */
+/* FOOTER */
 footer{text-align:center;padding:28px 24px;color:var(--muted);font-size:.77rem;border-top:1px solid var(--border)}
 footer a{color:var(--p1);text-decoration:none}
 
-/* ───────────────────────────── REVEAL ───────────────────────────────────── */
+/* REVEAL */
 .rev{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
 .rev.on{opacity:1;transform:translateY(0)}
 .rev-d1{transition-delay:.1s}.rev-d2{transition-delay:.2s}.rev-d3{transition-delay:.3s}
 
-/* ───────────────────────────── RESPONSIVE ───────────────────────────────── */
+/* RESPONSIVE */
 @media(max-width:900px){
   nav{padding:16px 24px}nav.sc{padding:12px 24px}
   .nav-links{display:none}
@@ -204,7 +201,7 @@ footer a{color:var(--p1);text-decoration:none}
 
 <main>
 
-<!-- ══ HERO ══════════════════════════════════════════════════════════════ -->
+<!-- HERO -->
 <section id="hero">
 <div class="hero-inner">
   <div class="hero-tag"><span class="dot"></span>Available for opportunities</div>
@@ -217,11 +214,12 @@ footer a{color:var(--p1);text-decoration:none}
   <div class="hero-tw"><span id="tw"></span><span class="blink">|</span></div>
 
   <p class="hero-bio">
-    Software Engineer with <strong>3+ years</strong> building production ML systems,
-    full‑stack platforms, and cloud infrastructure. Currently at
-    <strong>Sutherland</strong>, shipping ML‑driven systems handling
-    <strong>40% of company label volume</strong>.
-    <strong>AWS Certified Solutions Architect</strong> · MS Computer Science.
+    Software Engineer building <strong>production-grade AI/ML systems</strong> and
+    <strong>backend platforms</strong> across real-time inference, data pipelines,
+    and distributed infrastructure. Delivered ML-driven systems including
+    <strong>real-time fraud detection</strong> and <strong>healthcare claim risk prediction</strong>,
+    with proven impact reducing manual workflows by 30-50% and improving system reliability.
+    <strong>AWS Certified Solutions Architect</strong> with an MS in Computer Science.
   </p>
 
   <!-- Contact strip -->
@@ -234,9 +232,9 @@ footer a{color:var(--p1);text-decoration:none}
       <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-1a1 1 0 00-1 1v.217l7 4.2 7-4.2V4a1 1 0 00-1-1H2zm13 2.383l-4.708 2.825L15 11.105V5.383zm-.034 6.876l-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 002 13h12a1 1 0 00.966-.741z"/></svg>
       pavanssk3009@gmail.com
     </a>
-    <a href="https://www.linkedin.com/in/kpavan3009" target="_blank" class="hc">
+    <a href="https://www.linkedin.com/in/pavanseshasai" target="_blank" class="hc">
       <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
-      linkedin.com/in/kpavan3009
+      linkedin.com/in/pavanseshasai
     </a>
     <a href="https://github.com/Kpavan3009" target="_blank" class="hc">
       <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -257,25 +255,24 @@ footer a{color:var(--p1);text-decoration:none}
   </div>
 
   <div class="hero-stats">
-    <div><div class="stat-num" data-count="3">0</div><div class="stat-label">Years Exp</div></div>
-    <div><div class="stat-num" data-count="50">0</div><div class="stat-label">Prod Tickets+</div></div>
-    <div><div class="stat-num" data-count="95">0</div><div class="stat-label">% Test Coverage</div></div>
-    <div><div class="stat-num" data-count="92">0</div><div class="stat-label">% ML Accuracy</div></div>
-    <div><div class="stat-num" data-count="40">0</div><div class="stat-label">% Label Volume</div></div>
+    <div><div class="stat-num" data-count="50">0</div><div class="stat-label">% Manual Review Reduced</div></div>
+    <div><div class="stat-num" data-count="95">0</div><div class="stat-label">%+ Data Accuracy</div></div>
+    <div><div class="stat-num" data-count="40">0</div><div class="stat-label">% Incident Response Faster</div></div>
+    <div><div class="stat-num" data-count="91">0</div><div class="stat-label">% Fraud Precision</div></div>
   </div>
 </div>
 </section>
 
-<!-- ══ ABOUT ══════════════════════════════════════════════════════════════ -->
+<!-- ABOUT -->
 <section id="about">
   <div class="s-label">// about me</div>
   <div class="s-title">Who I <span>Am</span></div>
   <div class="ag rev">
     <div class="at">
-      <p>I'm a <strong>Software Engineer</strong> with 3+ years building things that matter — production ML pipelines, cloud-native APIs, and full-stack applications that serve real users at scale.</p>
-      <p>Currently at <strong>Sutherland</strong>, I own an ML-driven label governance system handling <strong>40% of company label volume</strong> with real-time AWS Lambda scoring and CI/CD deploys multiple times per week.</p>
-      <p>I hold a <strong>Master's in Computer Science</strong> from CSU Chico and a B.Tech in ECE from IIIT Nagpur. I'm an <strong>AWS Certified Solutions Architect (SAA-C03)</strong> with hands-on experience in Kubernetes, Terraform, and the full AWS ecosystem.</p>
-      <p>Passionate about LLMs, distributed systems, and building software that ships fast and stays reliable. Always open to exciting new opportunities.</p>
+      <p>I'm a <strong>Software Engineer</strong> focused on building production-grade <strong>AI/ML systems</strong> and scalable backend platforms, working at the intersection of machine learning, data pipelines, and distributed systems.</p>
+      <p>I've delivered ML-driven systems in both industry and advanced projects, including <strong>real-time fraud detection</strong> and <strong>healthcare claim risk prediction</strong> using XGBoost, LightGBM, and NLP pipelines. My focus is system design and performance -- event-driven architectures, low-latency feature pipelines, and scalable APIs.</p>
+      <p>I hold a <strong>Master's in Computer Science</strong> from CSU Chico and a B.Tech in ECE from IIIT Nagpur. I'm an <strong>AWS Certified Solutions Architect</strong> and <strong>Claude AI Certified Architect</strong>, with hands-on experience across the full stack from ML model deployment to containerized infrastructure.</p>
+      <p>I'm interested in roles involving scalable AI systems, real-time data platforms, and distributed infrastructure. I value clean architecture, strong observability, and continuous improvement through testing and automation.</p>
     </div>
     <div class="acode">
       <div class="ac">
@@ -283,58 +280,61 @@ footer a{color:var(--p1);text-decoration:none}
 &nbsp;&nbsp;<span class="ck">name</span><span class="cm">:</span>     <span class="cs">"Pavan Sesha Sai K"</span>,<br>
 &nbsp;&nbsp;<span class="ck">phone</span><span class="cm">:</span>    <span class="cs">"(512) 981-6732"</span>,<br>
 &nbsp;&nbsp;<span class="ck">email</span><span class="cm">:</span>    <span class="cs">"pavanssk3009@gmail.com"</span>,<br>
-&nbsp;&nbsp;<span class="ck">status</span><span class="cm">:</span>   <span class="cs">"🟢 Open to Opportunities"</span>,<br><br>
+&nbsp;&nbsp;<span class="ck">status</span><span class="cm">:</span>   <span class="cs">"Open to Opportunities"</span>,<br><br>
 &nbsp;&nbsp;<span class="ck">education</span><span class="cm">:</span> <span class="cb">[</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"MS CS — CSU Chico"</span>,<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"B.Tech ECE — IIIT Nagpur"</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"MS CS - CSU Chico"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"B.Tech ECE - IIIT Nagpur"</span><br>
 &nbsp;&nbsp;<span class="cb">]</span>,<br><br>
-&nbsp;&nbsp;<span class="ck">certs</span><span class="cm">:</span> <span class="cb">[</span><span class="cs">"AWS SAA-C03"</span>, <span class="cs">"ServiceNow CSA"</span><span class="cb">]</span>,<br>
-&nbsp;&nbsp;<span class="ck">hireable</span><span class="cm">:</span> <span class="cn">true</span> <span class="cm">// 🚀</span><br>
+&nbsp;&nbsp;<span class="ck">certs</span><span class="cm">:</span> <span class="cb">[</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"AWS SAA-C03"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"Claude AI Architect (Anthropic)"</span><br>
+&nbsp;&nbsp;<span class="cb">]</span>,<br>
+&nbsp;&nbsp;<span class="ck">hireable</span><span class="cm">:</span> <span class="cn">true</span><br>
 <span class="cb">}</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══ SKILLS ══════════════════════════════════════════════════════════════ -->
+<!-- SKILLS -->
 <section id="skills">
   <div class="s-label">// what i work with</div>
   <div class="s-title">Tech <span>Stack</span></div>
   <div class="sg">
     <div class="sc-card rev rev-d1">
-      <div class="sc-icon">🤖</div>
-      <div class="sc-title">AI / ML</div>
-      <div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">XGBoost</span><span class="tag">LangChain</span><span class="tag">CrewAI</span><span class="tag">scikit-learn</span><span class="tag">Pinecone RAG</span><span class="tag">Pandas</span></div>
+      <div class="sc-icon">&#x1F9E0;</div>
+      <div class="sc-title">AI / ML Systems</div>
+      <div class="tags"><span class="tag">XGBoost</span><span class="tag">LightGBM</span><span class="tag">scikit-learn</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">NLP / TF-IDF</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">MLflow</span><span class="tag">SHAP</span></div>
     </div>
     <div class="sc-card rev rev-d2">
-      <div class="sc-icon">⚡</div>
-      <div class="sc-title">Backend</div>
-      <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">Kafka</span></div>
+      <div class="sc-icon">&#x26A1;</div>
+      <div class="sc-title">Backend & APIs</div>
+      <div class="tags"><span class="tag">FastAPI</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">Microservices</span></div>
     </div>
     <div class="sc-card rev rev-d3">
-      <div class="sc-icon">🎨</div>
-      <div class="sc-title">Frontend</div>
-      <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Flutter</span><span class="tag">HTML/CSS</span><span class="tag">Vue.js</span></div>
+      <div class="sc-icon">&#x1F4CA;</div>
+      <div class="sc-title">Data Engineering & Systems</div>
+      <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Apache Spark</span><span class="tag">Kafka</span><span class="tag">Hadoop</span><span class="tag">Hive</span><span class="tag">Feature Engineering</span></div>
     </div>
     <div class="sc-card rev rev-d1">
-      <div class="sc-icon">☁️</div>
-      <div class="sc-title">Cloud & DevOps</div>
-      <div class="tags"><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">GitHub Actions</span><span class="tag">Lambda</span><span class="tag">CloudWatch</span></div>
+      <div class="sc-icon">&#x2601;&#xFE0F;</div>
+      <div class="sc-title">Cloud & Infrastructure</div>
+      <div class="tags"><span class="tag">AWS (EC2, S3, Lambda)</span><span class="tag">Azure</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">CI/CD</span><span class="tag">GitHub Actions</span></div>
     </div>
     <div class="sc-card rev rev-d2">
-      <div class="sc-icon">🗄️</div>
-      <div class="sc-title">Databases & Big Data</div>
-      <div class="tags"><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">MySQL</span><span class="tag">Apache Spark</span><span class="tag">Hadoop</span><span class="tag">Hive</span></div>
+      <div class="sc-icon">&#x1F4BB;</div>
+      <div class="sc-title">Languages & Frontend</div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">C#</span><span class="tag">React.js</span><span class="tag">HTML/CSS</span><span class="tag">Recharts</span></div>
     </div>
     <div class="sc-card rev rev-d3">
-      <div class="sc-icon">📊</div>
-      <div class="sc-title">Monitoring & Testing</div>
-      <div class="tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">ELK Stack</span><span class="tag">JUnit</span><span class="tag">Mockito</span><span class="tag">Selenium</span><span class="tag">TDD</span></div>
+      <div class="sc-icon">&#x1F50D;</div>
+      <div class="sc-title">Testing & Observability</div>
+      <div class="tags"><span class="tag">pytest</span><span class="tag">JUnit</span><span class="tag">Mockito</span><span class="tag">Selenium</span><span class="tag">TDD</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">ELK Stack</span></div>
     </div>
   </div>
 </section>
 
-<!-- ══ PROJECTS ════════════════════════════════════════════════════════════ -->
+<!-- PROJECTS -->
 <section id="projects">
   <div class="s-label">// things i've built</div>
   <div class="s-title">Featured <span>Projects</span></div>
@@ -342,74 +342,74 @@ footer a{color:var(--p1);text-decoration:none}
 
     <div class="pc rev rev-d1">
       <div class="pc-head">
-        <div class="pc-icon">🤖</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/ai-research-agent" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F3E5;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/claimiq" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>AI Research Agent</h3>
-      <p>Autonomous multi-agent swarm that generates complete, cited research reports from natural language queries using LangChain + CrewAI orchestration, Grok API web search, and Pinecone RAG over 50K+ documents.</p>
-      <div class="metrics"><span class="met">95% success rate</span><span class="met">~90s generation</span><span class="met">50K docs</span></div>
-      <div class="techs"><span class="tp">LangChain</span><span class="tp">CrewAI</span><span class="tp">Pinecone</span><span class="tp">Grok API</span><span class="tp">Python REPL</span></div>
+      <h3>ClaimIQ</h3>
+      <p>Healthcare claim denial prediction and workflow system. End-to-end ML pipeline predicting high-risk claims before payer deadlines using XGBoost. NLP classification pipeline routing denial reasons into actionable categories with 87% accuracy.</p>
+      <div class="metrics"><span class="met">0.84 AUC</span><span class="met">87% NLP accuracy</span><span class="met">&lt;200ms queries</span></div>
+      <div class="techs"><span class="tp">XGBoost</span><span class="tp">FastAPI</span><span class="tp">TF-IDF</span><span class="tp">PostgreSQL</span><span class="tp">React</span></div>
     </div>
 
     <div class="pc rev rev-d2">
       <div class="pc-head">
-        <div class="pc-icon">🎬</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/scalable-video-platform" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F6E1;&#xFE0F;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/vaultguard" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>Scalable Video Platform</h3>
-      <p>Full-stack video sharing platform. Videos upload directly to AWS S3 via presigned URLs — server never buffers large files. CloudFront CDN + global edge caching reduced load times by 40%.</p>
-      <div class="metrics"><span class="met">40% faster loads</span><span class="met">5GB uploads</span><span class="met">JWT + rotation</span></div>
-      <div class="techs"><span class="tp">React</span><span class="tp">Node.js</span><span class="tp">MongoDB</span><span class="tp">AWS S3</span><span class="tp">CloudFront</span><span class="tp">Docker</span></div>
+      <h3>VaultGuard</h3>
+      <p>Real-time fraud detection platform simulating production payment risk engines. Isolation Forest + LightGBM ensemble handling 0.5% fraud imbalance with SHAP explainability for analyst decision support.</p>
+      <div class="metrics"><span class="met">0.91 precision</span><span class="met">0.87 recall</span><span class="met">20+ features</span></div>
+      <div class="techs"><span class="tp">LightGBM</span><span class="tp">Redis</span><span class="tp">SHAP</span><span class="tp">Python</span><span class="tp">Event-Driven</span></div>
     </div>
 
     <div class="pc rev rev-d3">
       <div class="pc-head">
-        <div class="pc-icon">📊</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/covid19-demand-prediction" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F916;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/ai-research-agent" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>COVID-19 Demand Prediction</h3>
-      <p>Big data ML pipeline processing 10GB+ hotel reservation data with Apache Spark. Benchmarked LinearReg, RandomForest, XGBoost — XGBoost hit 92% accuracy using COVID-phase and mobility features.</p>
-      <div class="metrics"><span class="met">92% accuracy</span><span class="met">10GB+ data</span><span class="met">Spark pipeline</span></div>
-      <div class="techs"><span class="tp">PySpark</span><span class="tp">XGBoost</span><span class="tp">scikit-learn</span><span class="tp">Pandas</span><span class="tp">Hadoop</span></div>
+      <h3>AI Research Agent</h3>
+      <p>Autonomous multi-agent system that generates complete, cited research reports from natural language queries. LangChain + CrewAI orchestration with RAG over 50K+ documents and sandboxed code execution.</p>
+      <div class="metrics"><span class="met">95% success rate</span><span class="met">~90s generation</span><span class="met">50K docs</span></div>
+      <div class="techs"><span class="tp">LangChain</span><span class="tp">CrewAI</span><span class="tp">Pinecone</span><span class="tp">Grok API</span><span class="tp">Python</span></div>
     </div>
 
     <div class="pc rev rev-d1">
       <div class="pc-head">
-        <div class="pc-icon">🎯</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/Path-Finding-Visualiser" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F3AC;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/scalable-video-platform" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>Path Finding Visualiser</h3>
-      <p>Interactive real-time visualization of BFS, DFS, Dijkstra, and A* pathfinding algorithms. Place walls, set start/end points, and watch algorithms explore the grid in real time.</p>
-      <div class="metrics"><span class="met">4 algorithms</span><span class="met">Real-time viz</span></div>
-      <div class="techs"><span class="tp">JavaScript</span><span class="tp">HTML Canvas</span><span class="tp">CSS</span></div>
+      <h3>Scalable Video Platform</h3>
+      <p>Full-stack video sharing platform with direct S3 uploads via presigned URLs, CloudFront CDN for global edge caching, dual-token JWT auth with rotation, and MongoDB full-text search.</p>
+      <div class="metrics"><span class="met">40% faster loads</span><span class="met">5GB uploads</span><span class="met">JWT + rotation</span></div>
+      <div class="techs"><span class="tp">React</span><span class="tp">Node.js</span><span class="tp">MongoDB</span><span class="tp">AWS S3</span><span class="tp">CloudFront</span><span class="tp">Docker</span></div>
     </div>
 
     <div class="pc rev rev-d2">
       <div class="pc-head">
-        <div class="pc-icon">😴</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/Drowsiness-Detection" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F4C8;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/covid19-demand-prediction" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>Drowsiness Detection</h3>
-      <p>Real-time driver drowsiness detection using OpenCV face detection and deep learning eye-state classification. Triggers audio alerts when drowsiness is detected — a safety-critical CV application.</p>
-      <div class="metrics"><span class="met">Real-time</span><span class="met">Audio alerts</span></div>
-      <div class="techs"><span class="tp">Python</span><span class="tp">OpenCV</span><span class="tp">TensorFlow</span></div>
+      <h3>COVID-19 Demand Prediction</h3>
+      <p>Big data ML pipeline processing 10GB+ hotel reservation data with Apache Spark. Benchmarked Linear Regression, Random Forest, and XGBoost with COVID-phase and mobility features.</p>
+      <div class="metrics"><span class="met">92% accuracy</span><span class="met">10GB+ data</span><span class="met">Spark pipeline</span></div>
+      <div class="techs"><span class="tp">PySpark</span><span class="tp">XGBoost</span><span class="tp">scikit-learn</span><span class="tp">Pandas</span><span class="tp">Hadoop</span></div>
     </div>
 
     <div class="pc rev rev-d3">
       <div class="pc-head">
-        <div class="pc-icon">📌</div>
-        <div class="pc-links"><a href="https://github.com/Kpavan3009/inspire-boards" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
+        <div class="pc-icon">&#x1F3AF;</div>
+        <div class="pc-links"><a href="https://github.com/Kpavan3009/Path-Finding-Visualiser" target="_blank" class="pl" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></div>
       </div>
-      <h3>Inspire Boards</h3>
-      <p>Pinterest-style inspiration board mobile app built with Flutter and Dart. Clean masonry grid layout, image collections, and cross-platform support for iOS and Android.</p>
-      <div class="metrics"><span class="met">Cross-platform</span><span class="met">Smooth UI</span></div>
-      <div class="techs"><span class="tp">Flutter</span><span class="tp">Dart</span><span class="tp">iOS / Android</span></div>
+      <h3>Path Finding Visualiser</h3>
+      <p>Interactive real-time visualization of BFS, DFS, Dijkstra, and A* pathfinding algorithms. Place walls, set start/end points, and watch algorithms explore the grid step by step.</p>
+      <div class="metrics"><span class="met">4 algorithms</span><span class="met">Real-time viz</span></div>
+      <div class="techs"><span class="tp">JavaScript</span><span class="tp">HTML Canvas</span><span class="tp">CSS</span></div>
     </div>
 
   </div>
 </section>
 
-<!-- ══ EXPERIENCE ══════════════════════════════════════════════════════════ -->
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="s-label">// where i've worked</div>
   <div class="s-title">Work <span>Experience</span></div>
@@ -420,15 +420,16 @@ footer a{color:var(--p1);text-decoration:none}
       <div class="tm">
         <span class="tc">Sutherland</span>
         <span class="tr">Software Engineer</span>
-        <span class="tdate">Jul 2025 – Present</span>
+        <span class="tdate">Jul 2025 - Present</span>
       </div>
       <ul>
-        <li>Designed and shipped a production <strong>ML-driven label governance system</strong> in Java/Spring Boot handling <strong>40% of company label volume</strong> with real-time validation and REST APIs.</li>
-        <li>Reduced manual label review time by <strong>50%</strong> through model tuning and A/B testing of validation logic against production baselines.</li>
-        <li>Deployed <strong>AWS Lambda</strong> scoring services with <strong>CloudWatch</strong> monitoring — cut incident response time by <strong>40%</strong>.</li>
-        <li>Owned <strong>CI/CD</strong> via GitHub Actions and AWS CodeDeploy — zero-downtime rollouts, shipping multiple times per week.</li>
-        <li>Achieved <strong>95%+ test coverage</strong> with JUnit/Mockito, closed <strong>50+ production tickets</strong>.</li>
-        <li>Set up cross-region <strong>Amazon S3</strong> replication and disaster recovery, improving data availability by <strong>30%</strong>.</li>
+        <li>Scaled ML-powered label validation system to process <strong>~40% of total label volume</strong>, reducing manual review time by <strong>50%</strong> through model-driven validation</li>
+        <li>Deployed real-time ML inference services on <strong>AWS Lambda</strong> with CloudWatch monitoring, reducing incident response time by <strong>40%</strong></li>
+        <li>Designed data validation pipelines ensuring <strong>95%+ accuracy</strong> across production releases</li>
+        <li>Automated <strong>CI/CD pipelines</strong> (GitHub Actions, AWS CodeDeploy), enabling frequent zero-downtime deployments</li>
+        <li>Implemented cross-region <strong>S3 replication</strong> and disaster recovery, improving data availability and fault tolerance</li>
+        <li>Maintained <strong>90%+ system uptime</strong> as on-call engineer by resolving distributed system issues in production</li>
+        <li>Increased test coverage to <strong>95%+</strong> using JUnit and Mockito, improving release stability</li>
       </ul>
     </div>
 
@@ -436,50 +437,59 @@ footer a{color:var(--p1);text-decoration:none}
       <div class="td"></div>
       <div class="tm">
         <span class="tc">Concentrix</span>
-        <span class="tr">Software Engineer</span>
-        <span class="tdate">May 2021 – Aug 2023 · Remote</span>
+        <span class="tr">Software Engineer (Contract)</span>
+        <span class="tdate">May 2021 - Aug 2023 | Remote</span>
       </div>
       <ul>
-        <li>Built backend workflow automation in <strong>Java/Spring Boot</strong> for finance platform, reducing manual approvals by <strong>30%</strong> and latency by <strong>20%</strong>.</li>
-        <li>Optimized SQL queries and schema for tax modules, cutting page load from <strong>1.8s → 1.3s</strong>.</li>
-        <li>Developed Selenium + JUnit CI test suites, raising coverage from <strong>60% to 85%</strong>.</li>
-        <li>Engineered <strong>REST API gateway</strong> with caching, reducing processing by <strong>60%</strong> and resource usage by <strong>35%</strong>.</li>
-        <li>Led code reviews for <strong>5-person team</strong>, reducing post-release defects by <strong>55%</strong>.</li>
+        <li>Built backend workflow automation in <strong>Java/Spring Boot</strong>, reducing manual approvals by <strong>30%</strong> and processing latency by <strong>20%</strong></li>
+        <li>Reduced page load time from <strong>1.8s to 1.3s</strong> by optimizing SQL queries and restructuring database schema</li>
+        <li>Built REST API gateway with caching, reducing processing overhead by <strong>60%</strong> and infrastructure usage by <strong>35%</strong></li>
+        <li>Improved regression efficiency by <strong>45%</strong> through automated test pipelines (Selenium + JUnit), increasing coverage from <strong>60% to 85%</strong></li>
+        <li>Reduced post-release defects by <strong>55%</strong> by leading code reviews across a <strong>5-member team</strong></li>
       </ul>
     </div>
 
   </div>
 </section>
 
-<!-- ══ CERTIFICATIONS ══════════════════════════════════════════════════════ -->
+<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="s-label">// credentials</div>
   <div class="s-title">Certifi<span>cations</span></div>
   <div class="cg">
-    <div class="cert rev rev-d1"><div class="cert-logo">☁️</div><div><div class="cert-name">AWS Certified Solutions Architect</div><div class="cert-iss">Amazon Web Services · Associate SAA-C03</div></div></div>
-    <div class="cert rev rev-d2"><div class="cert-logo">🎫</div><div><div class="cert-name">ServiceNow Certified System Administrator</div><div class="cert-iss">ServiceNow · CSA</div></div></div>
-    <div class="cert rev rev-d3"><div class="cert-logo">🏆</div><div><div class="cert-name">CodeChef Certified DSA Program</div><div class="cert-iss">CodeChef · Data Structures & Algorithms</div></div></div>
+    <div class="cert rev rev-d1"><div class="cert-logo">&#x2601;&#xFE0F;</div><div><div class="cert-name">AWS Certified Solutions Architect</div><div class="cert-iss">Amazon Web Services | Associate (SAA-C03)</div></div></div>
+    <div class="cert rev rev-d2"><div class="cert-logo">&#x1F9E0;</div><div><div class="cert-name">Claude AI Certified Architect</div><div class="cert-iss">Anthropic | Foundations</div></div></div>
   </div>
 </section>
 
-<!-- ══ CONTACT ══════════════════════════════════════════════════════════════ -->
+<!-- EDUCATION -->
+<section id="education">
+  <div class="s-label">// education</div>
+  <div class="s-title">Edu<span>cation</span></div>
+  <div class="cg">
+    <div class="cert rev rev-d1"><div class="cert-logo">&#x1F393;</div><div><div class="cert-name">Master of Science in Computer Science</div><div class="cert-iss">California State University, Chico | Aug 2023 - May 2025</div></div></div>
+    <div class="cert rev rev-d2"><div class="cert-logo">&#x1F393;</div><div><div class="cert-name">Bachelor of Technology in Electronics & Computer Engineering</div><div class="cert-iss">IIIT Nagpur, India | June 2019 - April 2023</div></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrap rev">
-    <h2>Let's Build Something <span style="background:linear-gradient(135deg,var(--p1),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Amazing</span></h2>
-    <p>Open to Software Engineer, ML Engineer, Full Stack, and SRE roles.<br>Feel free to reach out through any of the channels below.</p>
+    <h2>Let's Build Something <span style="background:linear-gradient(135deg,var(--p1),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent">Great</span></h2>
+    <p>Open to Software Engineer, Machine Learning Engineer, Backend Engineer, AI Engineer, and Data Platform Engineer roles.<br>Feel free to reach out through any of the channels below.</p>
 
     <div class="contact-grid">
       <div class="cinfo">
-        <div class="cinfo-icon">📱</div>
+        <div class="cinfo-icon">&#x1F4F1;</div>
         <div><div class="cinfo-label">Phone</div><div class="cinfo-val"><a href="tel:5129816732">(512) 981-6732</a></div></div>
       </div>
       <div class="cinfo">
-        <div class="cinfo-icon">✉️</div>
+        <div class="cinfo-icon">&#x2709;&#xFE0F;</div>
         <div><div class="cinfo-label">Email</div><div class="cinfo-val"><a href="mailto:pavanssk3009@gmail.com">pavanssk3009@gmail.com</a></div></div>
       </div>
       <div class="cinfo">
-        <div class="cinfo-icon">🎓</div>
-        <div><div class="cinfo-label">Education</div><div class="cinfo-val">MS CS · CSU Chico</div></div>
+        <div class="cinfo-icon">&#x1F393;</div>
+        <div><div class="cinfo-label">Education</div><div class="cinfo-val">MS CS | CSU Chico</div></div>
       </div>
     </div>
 
@@ -488,13 +498,13 @@ footer a{color:var(--p1);text-decoration:none}
         <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm2-1a1 1 0 00-1 1v.217l7 4.2 7-4.2V4a1 1 0 00-1-1H2zm13 2.383l-4.708 2.825L15 11.105V5.383zm-.034 6.876l-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 002 13h12a1 1 0 00.966-.741z"/></svg>
         Email Me
       </a>
-      <a href="https://www.linkedin.com/in/kpavan3009" target="_blank" class="cl cl-li">
+      <a href="https://www.linkedin.com/in/pavanseshasai" target="_blank" class="cl cl-li">
         <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
         LinkedIn
       </a>
-      <a href="https://kpavan3009.github.io" target="_blank" class="cl cl-gh">
-        <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm4.5-1.5a.5.5 0 000 1h5.793l-2.147 2.146a.5.5 0 00.708.708l3-3a.5.5 0 000-.708l-3-3a.5.5 0 10-.708.708L10.293 6.5H4.5z"/></svg>
-        Portfolio
+      <a href="https://github.com/Kpavan3009" target="_blank" class="cl cl-gh">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
       </a>
     </div>
   </div>
@@ -503,17 +513,17 @@ footer a{color:var(--p1);text-decoration:none}
 </main>
 
 <footer>
-  <p>Designed & built by Pavan Sesha Sai · 2025</p>
+  <p>Pavan Sesha Sai | 2025</p>
 </footer>
 
 <script>
-// ── Cursor ───────────────────────────────────────────────────
+// Cursor
 const cur=document.getElementById('cur'),ring=document.getElementById('cur-r');
 let mx=0,my=0,rx=0,ry=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
 (function a(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
 
-// ── Particles ────────────────────────────────────────────────
+// Particles
 const cvs=document.getElementById('cvs'),ctx=cvs.getContext('2d');
 let W,H,pts=[];
 function resize(){W=cvs.width=innerWidth;H=cvs.height=innerHeight}
@@ -534,13 +544,13 @@ for(let i=0;i<90;i++)pts.push({x:Math.random()*1920,y:Math.random()*1080,vx:(Mat
   requestAnimationFrame(draw);
 })();
 
-// ── Nav scroll ───────────────────────────────────────────────
+// Nav scroll
 const nb=document.getElementById('nb');
 window.addEventListener('scroll',()=>nb.classList.toggle('sc',scrollY>50));
 
-// ── Typewriter ───────────────────────────────────────────────
+// Typewriter
 const twEl=document.getElementById('tw');
-const roles=['Software Engineer','ML / AI Engineer','Full Stack Developer','Cloud / SRE Engineer','AWS Solutions Architect'];
+const roles=['Software Engineer','AI / ML Systems Engineer','Backend & Data Platform Engineer','Real-Time Inference | Data Pipelines','AWS Certified Solutions Architect'];
 let ri=0,ci=0,del=false;
 function type(){
   const w=roles[ri];
@@ -550,12 +560,11 @@ function type(){
   setTimeout(type,del?42:82);
 }type();
 
-// ── Counter ──────────────────────────────────────────────────
+// Counter
 function animCount(el,t){let c=0;const s=t/55;const iv=setInterval(()=>{c=Math.min(c+s,t);el.textContent=Math.floor(c);if(c>=t){el.textContent=t;clearInterval(iv);}},22);}
 new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('[data-count]').forEach(el=>animCount(el,+el.dataset.count));}});},{threshold:.3}).observe(document.querySelector('.hero-stats'));
 
-// ── Reveal ───────────────────────────────────────────────────
-new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');});},{threshold:.1}).observe=function(el){this._fn(el)};
+// Reveal
 const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');}),{threshold:.1});
 document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
 </script>
